@@ -28,3 +28,14 @@ export function logWarn(msg: string, logBlock = false) {
 
   if (logBlock) log('\n\n');
 }
+
+export function logError(msg: string | Error) {
+  console.error(
+    chalk.bgRed(' Error ') + ' ' +
+    chalk.red(msg instanceof Error ? msg.message : msg)
+  );
+
+  if (msg instanceof Error) {
+    console.error(msg.stack);
+  }
+}
