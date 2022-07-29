@@ -1,17 +1,26 @@
 {
-  "name": "learn-miniprogram-ci",
+  "name": "miniapp-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "johnhom <924358746@qq.com>",
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "bin": {
+    "miniapp-cli": "./bin/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build:comment": "构建",
+    "build": "rm -rf lib && npx tsc --build"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4",
     "commander": "^9.4.0",
     "dayjs": "^1.11.4",
     "dotenv": "^16.0.1",
