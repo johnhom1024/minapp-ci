@@ -23,7 +23,7 @@ privateKeyPath=./privateKey/privateKey.wx*******.key
 
 ## 使用
 
-通过这个命令可以查看使用帮助：
+通过这个命令可以查看帮助：
 
 ```shell
 wxmp-cli
@@ -43,9 +43,7 @@ wxmp-cli upload
 
 ```json
 {
-  ...
   "miniprogramRoot": "./dist/build/mp-weixin",
-  ...
 }
 ```
 
@@ -54,7 +52,7 @@ wxmp-cli upload
 
 ## 疑难解答
 
-Q: 上传过程中抛出异常：`errCode: -10008, errMsg: invalid ip: 120.79.95.110, ...`"
+Q: 上传过程中抛出异常：`errCode: -10008, errMsg: invalid ip: 120.79.95.110, ...`
 
 A: 需要检查微信公共平台的开发配置中，上传白名单的配置。
 
