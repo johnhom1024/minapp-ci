@@ -1,22 +1,23 @@
 {
-  "name": "wxmp-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "author": "johnhom <924358746@qq.com>",
+  "name": "minilapp-cli",
+  "version": "0.0.1",
+  "description": "基于miniprogram-ci二次封装的CLI，可在命令行上传微信小程序代码到微信公众平台",
+  "main": "./bin/cli.js",
+  "author": "johnhom1024 <924358746@qq.com>",
   "files": [
     "/bin",
     "/lib"
   ],
   "bin": {
-    "wxmp-cli": "./bin/cli.js"
+    "minilapp-cli": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build:comment": "构建",
     "build": "rm -rf lib && npx tsc --build",
-    "commit": "npx cz"
+    "commit": "npx cz",
+    "release": "standard-version"
   },
   "keywords": [],
   "license": "ISC",

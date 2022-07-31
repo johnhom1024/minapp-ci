@@ -1,13 +1,13 @@
-# wxmp-cli
+# minilapp-cli
 
-> 基于`miniapp-cli`二次封装的CLI，可在命令行上传微信小程序代码到微信公众平台。
+> 基于`miniprogram-ci`二次封装的CLI，可在命令行上传微信小程序代码到微信公众平台。
 
 ## 安装
 
-进入在微信小程序的项目中，安装`wxmp-cli`：
+进入在微信小程序的项目中，安装`minilapp-cli`：
 
 ```
-npm install wxmp-cli
+npm install minilapp-cli
 ```
 
 ## 配置
@@ -21,20 +21,22 @@ appid=********
 privateKeyPath=./privateKey/privateKey.wx*******.key
 ```
 
+> 使用前需要使用小程序管理员身份访问"微信公众平台-开发-开发设置"后下载代码上传密钥，并配置 IP 白名单，才能进行上传、预览操作。
+
 ## 使用
 
 通过这个命令可以查看帮助：
 
 ```shell
-wxmp-cli
+minilapp-cli
 ```
 
 ### upload
 
-在我们打包了微信小程序之后，在项目的命令行中运行`wxmp-cli upload`：
+在我们打包了微信小程序之后，在项目的命令行中运行`minilapp-cli upload`：
 
 ```shell
-wxmp-cli upload
+minilapp-cli upload
 ```
 
 `upload`命令会在根目录上找到`project.config.json`文件，然后上传`miniprogramRoot`字段里对应的相对目录文件到微信公众平台中。
@@ -48,7 +50,6 @@ wxmp-cli upload
 ```
 
 则该命令会上传项目中`./dist/build/mp-wexin`目录中的文件。
-
 
 ## 疑难解答
 
