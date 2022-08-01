@@ -1,6 +1,6 @@
 {
   "name": "minapp-ci",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "基于miniprogram-ci二次封装的CLI，可在命令行上传微信小程序代码到微信公众平台",
   "main": "./bin/cli.js",
   "author": "johnhom1024 <924358746@qq.com>",
