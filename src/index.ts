@@ -9,7 +9,7 @@ program
   })
 
 program
-  .version('1.0.0', '-v --version')
+  .version('0.0.2', '-v --version')
   .usage('minapp <command> [option]');
 
 program.parse(process.argv);
