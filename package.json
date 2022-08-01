@@ -1,5 +1,5 @@
 {
-  "name": "minilapp-cli",
+  "name": "minapp-ci",
   "version": "0.0.1",
   "description": "基于miniprogram-ci二次封装的CLI，可在命令行上传微信小程序代码到微信公众平台",
   "main": "./bin/cli.js",
@@ -9,7 +9,7 @@
     "/lib"
   ],
   "bin": {
-    "minilapp-cli": "./bin/cli.js"
+    "minapp-ci": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,13 +1,13 @@
-# minilapp-cli
+# minapp-ci
 
 > 基于`miniprogram-ci`二次封装的CLI，可在命令行上传微信小程序代码到微信公众平台。
 
 ## 安装
 
-进入在微信小程序的项目中，安装`minilapp-cli`：
+进入在微信小程序的项目中，安装`minapp-ci`：
 
 ```
-npm install minilapp-cli
+npm install minapp-ci
 ```
 
 ## 配置
@@ -28,15 +28,15 @@ privateKeyPath=./privateKey/privateKey.wx*******.key
 通过这个命令可以查看帮助：
 
 ```shell
-minilapp-cli
+minapp-ci
 ```
 
 ### upload
 
-在我们打包了微信小程序之后，在项目的命令行中运行`minilapp-cli upload`：
+在我们打包了微信小程序之后，在项目的命令行中运行`minapp-ci upload`：
 
 ```shell
-minilapp-cli upload
+minapp-ci upload
 ```
 
 `upload`命令会在根目录上找到`project.config.json`文件，然后上传`miniprogramRoot`字段里对应的相对目录文件到微信公众平台中。

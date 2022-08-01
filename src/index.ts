@@ -10,6 +10,6 @@ program
 
 program
   .version('1.0.0', '-v --version')
-  .usage('miniapp-cli <command> [option]');
+  .usage('minapp <command> [option]');
 
 program.parse(process.argv);
